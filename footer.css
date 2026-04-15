@@ -1,0 +1,18 @@
+/* Footer */
+.social-icon {
+    color: rgba(255,255,255,0.7);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 50%;
+}
+
+.social-icon:hover {
+    color: var(--white);
+    background-color: var(--coffee-accent);
+    transform: translateY(-5px);
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kopi Sena</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-cup-hot-fill me-2 brand-icon"></i>
+                Kopi Sena
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding flex-grow-1" style="margin-top: 60px;">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-uppercase text-accent fw-bold mb-2 tracking-wide">Hubungi Kami</h6>
+                <h2 class="section-title">Kunjungi Cafe Kami</h2>
+            </div>
+            
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info-wrapper h-100 bg-dark-coffee text-white p-5 rounded-4 shadow">
+                        <h3 class="mb-4 text-white font-playfair">Informasi Kontak</h3>
+                        <p class="mb-4 text-light fw-light">Punya pertanyaan, urusan reservasi, kritik, atau saran? Jangan ragu untuk menghubungi tim Kopi Sena. Kami dengan senang hati akan segera merespon.</p>
+                        
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="bi bi-geo-alt-fill fs-4 text-accent me-3 mt-1"></i>
+                            <div>
+                                <h5 class="mb-1 text-white font-playfair">Alamat</h5>
+                                <p class="text-light fw-light mb-0">Jl. DR. Ratulangi No.130, Mario, Kec. Mariso<br>Kota Makassar, Sulawesi Selatan 90125</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="bi bi-telephone-fill fs-4 text-accent me-3 mt-1"></i>
+                            <div>
+                                <h5 class="mb-1 text-white font-playfair">Telepon & WA</h5>
+                                <p class="text-light fw-light mb-0">+62 812 3456 7890</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <i class="bi bi-envelope-fill fs-4 text-accent me-3 mt-1"></i>
+                            <div>
+                                <h5 class="mb-1 text-white font-playfair">Email</h5>
+                                <p class="text-light fw-light mb-0">hello@kopisena.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="card border-0 shadow-sm rounded-4 h-100">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="mb-4 font-playfair">Kirim Pesan</h3>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label fw-medium text-muted small">NAMA LENGKAP</label>
+                                        <input type="text" class="form-control form-control-lg custom-input" id="name" placeholder="John Doe">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label fw-medium text-muted small">EMAIL</label>
+                                        <input type="email" class="form-control form-control-lg custom-input" id="email" placeholder="john@example.com">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label fw-medium text-muted small">SUBJEK</label>
+                                    <input type="text" class="form-control form-control-lg custom-input" id="subject" placeholder="Pertanyaan / Reservasi">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="form-label fw-medium text-muted small">PESAN</label>
+                                    <textarea class="form-control form-control-lg custom-input" id="message" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill py-3 fw-bold cta-submit">Kirim Pesan <i class="bi bi-send ms-2"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="row mt-5" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="map-container rounded-4 shadow-sm overflow-hidden border">
+                        <iframe src="https://maps.google.com/maps?q=Jl.%20DR.%20Ratulangi%20No.130,%20Mario,%20Kec.%20Mariso,%20Kota%20Makassar,%20Sulawesi%20Selatan%2090125&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-coffee text-white pt-5 pb-4 border-top border-secondary mt-auto">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                    <a href="index.html" class="text-white text-decoration-none d-flex align-items-center justify-content-center justify-content-md-start">
+                        <i class="bi bi-cup-hot-fill fs-3 text-accent me-2"></i>
+                        <span class="fs-4 fw-bold font-playfair">Kopi Sena</span>
+                    </a>
+                    <p class="text-light fw-light mt-3 mb-0 small opacity-75">Menyeduh kualitas, melayani dengan hati. Tempat bersantai pilihanmu di tengah kesibukan kota.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mx-2"><a href="#" class="social-icon"><i class="bi bi-instagram fs-4"></i></a></li>
+                        <li class="list-inline-item mx-2"><a href="#" class="social-icon"><i class="bi bi-tiktok fs-4"></i></a></li>
+                        <li class="list-inline-item mx-2"><a href="#" class="social-icon"><i class="bi bi-whatsapp fs-4"></i></a></li>
+                        <li class="list-inline-item mx-2"><a href="#" class="social-icon"><i class="bi bi-twitter-x fs-4"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <p class="mb-0 text-light small opacity-75">&copy; 2026 Kopi Sena. All rights reserved.</p>
+                    <p class="mb-0 text-light small opacity-50 mt-1">Designed by nabss</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script>
+        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-in-out-cubic' });
+    </script>
+</body>
+</html>
